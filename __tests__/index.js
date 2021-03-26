@@ -3,7 +3,7 @@ const { areaOfCircle, isFristLetterUpperCase } = require("../src/index");
 describe("Test for area of a circle", () => {
   test("A paramater that is not a number should throw an error", () => {
     try {
-      areaOfCircle(70);
+      areaOfCircle('some test');
     } catch (error) {
       expect(error).toBe("Parameter is not a number");
     }
