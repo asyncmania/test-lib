@@ -31,6 +31,11 @@ describe("Test to check if the first letter is an upper case", () => {
     expect(result).toBe(false);
   });
 
+  test("A word that starts with a non-letter character should return false", () => {
+    const result = isFristLetterUpperCase("[some text here]");
+    expect(result).toBe(false);
+  });
+
   test("A word that starts with an uppercase should return true", () => {
     const result = isFristLetterUpperCase("This should work fine");
     expect(result).toBe(true);
